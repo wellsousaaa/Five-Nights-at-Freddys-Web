@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './css/Game.css';
 import getCam from './components/Images';
-import Functions, { Variables } from './Functions';
+import Functions from './Functions';
 import Media from './Media';
 
 /// COMPONENTS
@@ -20,8 +20,17 @@ const OfficeProps = {
 let camera = false;
 let [BonnieLocalization, ChicaLocalization, FreddyLocalization, FoxyLocalization] = ['Stage', 'Stage', 'Stage', ''];
 let [BonnieIterator, ChicaIterator, FreddyIterator, FoxyIterator] = [Functions.Bonnie(), Functions.Chica(), Functions.Freddy(), Functions.Foxy()];
-const {BonnieRange, ChicaRange, FreddyRange, FoxyRange } = Variables;
-const {BonnieTime, ChicaTime, FreddyTime, FoxyTime } = Variables;
+
+/// FOR FUTURES UPDATES
+const ChicaTime = 6300
+const BonnieTime = 3000
+const FreddyTime = 10000
+const FoxyTime = 13000
+
+const BonnieRange = 1;
+const ChicaRange = 2;
+const FreddyRange = 1;
+const FoxyRange = 1;
 
 let Local = '';
 let ScreenWidth = window.screen.width;
