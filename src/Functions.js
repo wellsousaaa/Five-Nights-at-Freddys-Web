@@ -38,4 +38,4 @@ const Functions = {
     checkAnimatronicsPosition,
 }
 
-module.exports = Functions;
+export default Functions;
