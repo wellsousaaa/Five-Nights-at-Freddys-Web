@@ -12,7 +12,7 @@ Installation
 -----------------------------------------------------------------
 First you need to clone this repository 
 ```
-https://github.com/wellsousaaa/Five-Nights-at-Freddys-Web.git
+git clone https://github.com/wellsousaaa/Five-Nights-at-Freddys-Web.git
 ```
 Then start it using npm or yarn
 ```
