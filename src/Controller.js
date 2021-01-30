@@ -12,6 +12,7 @@ import VictorySound from "./media/Sounds/Clock.mp3";
 const TIME_TO_CHANGE_HOUR = 80000;
 
 let gameOverAudio = new Audio(StaticSound);
+let hourInterval = null;
 
 function Controller({
     isPlaying,
@@ -27,19 +28,19 @@ function Controller({
 
     useEffect(() => {
         dispatch({ type: "CLEAR_DATA" });
-        changeHour();
         changeEnergy();
+        
+        hourInterval = setInterval(() => {
+            if (hour === 6 && !gameOver) endGame(true);
+            else changeHour(hour);
+        }, TIME_TO_CHANGE_HOUR);
 
         return () => {
+            clearInterval(hourInterval);
             dispatch({ type: "CLEAR_DATA" });
             gameOverAudio.pause();
         };
     }, []);
-
-    useEffect(() => {
-        if (hour === 6 && !gameOver) endGame(true);
-        else changeHour(hour);
-    }, [hour]);
 
     useEffect(() => {
         if (energy <= 0) {
@@ -49,9 +50,7 @@ function Controller({
 
     async function changeHour(h) {
         if (isPlaying && !jumpscare && !gameOver && h < 6) {
-            setTimeout(() => {
-                dispatch({ type: "CHANGE_HOUR" });
-            }, TIME_TO_CHANGE_HOUR);
+            dispatch({ type: "CHANGE_HOUR" });
         }
     }
 
@@ -62,10 +61,6 @@ function Controller({
             }, time);
         }
     }
-
-    const notPlaying = () => {
-        dispatch({ type: "CHANGE_IS_PLAYING" });
-    };
 
     const setBlackout = () => {
         new Audio(BlackoutSound).play();
