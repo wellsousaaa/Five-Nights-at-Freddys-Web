@@ -4,13 +4,24 @@
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+:root {
+  --background-color: black;
+  --button-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
   width: 100vw;
   height: 100vh;
+}
+
+.custom-night {
+  background-image: url("https://wendelldesousa.netlify.app/assets/FNAF.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .animation {
@@ -70,8 +81,9 @@ body {
 body {
   margin: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: var(--background-color);
 }
+
 .camera-button {
   pointer-events: all !important;
   margin-left: 26vw;
@@ -119,7 +131,7 @@ area.hover {
   height: 100vh;
 }
 .animatronics-true {
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 .static {
@@ -196,15 +208,6 @@ img[data-disabled="false"] {
   align-items: center;
 }
 
-.start-screen {
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
-
 img {
   pointer-events: none;
 }
@@ -213,33 +216,6 @@ img {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-}
-
-.start-screen div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.start-screen img {
-  border-radius: 25px;
-  margin-bottom: 50px;
-  max-width: 200px;
-  max-height: 200px;
-}
-
-.start-screen button {
-  border-radius: 15px;
-  width: 100px;
-  cursor: pointer;
-  height: 50px;
-  outline: none;
-  color: white;
-  font-size: 15pt;
-  font-weight: 800;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
 }
 
 .camera-container {

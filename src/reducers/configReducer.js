@@ -2,7 +2,7 @@ const originalState = {
     hour: 0,
     isPlaying: true,
     energy: 100,
-    time: 8500,
+    time: 9000,
     blackout: false,
     jumpscare: false,
     gameOver: false,

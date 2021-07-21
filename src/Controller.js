@@ -9,7 +9,7 @@ import VictoryGIF from "./media/Textures/Victory.gif";
 import VictorySound from "./media/Sounds/Clock.mp3";
 
 ///89000
-const TIME_TO_CHANGE_HOUR = 80000;
+const TIME_TO_CHANGE_HOUR = 89000;
 
 let gameOverAudio = new Audio(StaticSound);
 let hourInterval = null;
@@ -22,25 +22,29 @@ function Controller({
     jumpscare,
     setStart,
     dispatch,
+    stages,
 }) {
     const [gameOver, setGameOver] = useState(false);
     const [victory, setVictory] = useState(false);
 
+
     useEffect(() => {
         dispatch({ type: "CLEAR_DATA" });
         changeEnergy();
-        
-        hourInterval = setInterval(() => {
-            if (hour === 6 && !gameOver) endGame(true);
-            else changeHour(hour);
-        }, TIME_TO_CHANGE_HOUR);
 
         return () => {
-            clearInterval(hourInterval);
+            // clearInterval(hourInterval);
             dispatch({ type: "CLEAR_DATA" });
             gameOverAudio.pause();
         };
     }, []);
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (hour === 5 && !gameOver) endGame(true);
+            else changeHour(hour);
+        }, TIME_TO_CHANGE_HOUR);
+    }, [hour])
 
     useEffect(() => {
         if (energy <= 0) {
@@ -74,7 +78,11 @@ function Controller({
             setVictory(true);
             let VictoryMusic = new Audio(VictorySound);
             VictoryMusic.play();
-            localStorage.setItem("★", "★");
+
+            const victories = JSON.parse(localStorage.getItem("victories")) || {};
+            if(stages.mode !== "CUSTOM") victories[stages.mode] = "★"
+            
+            localStorage.setItem("victories", JSON.stringify(victories));
         } else {
             setGameOver(true);
             gameOverAudio.currentTime = 0;
@@ -108,7 +116,7 @@ function Controller({
                     <img alt="victory" src={VictoryGIF} />
                 </div>
             ) : null}
-            <Game gameOver={gameOver || victory} endGame={endGame} />
+            <Game stages={stages} gameOver={gameOver || victory} endGame={endGame} />
         </>
     );
 }

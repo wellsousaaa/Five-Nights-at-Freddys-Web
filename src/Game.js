@@ -19,6 +19,7 @@ const Game = ({
   isCameraOpen,
   energy,
   gameOver,
+  stages,
   endGame,
   dispatch,
 }) => {
@@ -41,7 +42,7 @@ const Game = ({
   }, [energy]);
 
   useEffect(() => {
-    let newTime = 5000;
+    let newTime = 9000;
     if (office.leftDoor) newTime -= 1100;
     if (office.rightDoor) newTime -= 1100;
     if (office.leftLight) newTime -= 500;
@@ -89,6 +90,7 @@ const Game = ({
   return (
     <>
       <Animatronic
+        stages={stages}
         handleJumpscare={handleJumpscare}
         gameOver={gameOver}
         isThisDoorOpen={isThisDoorOpen}
