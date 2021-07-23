@@ -79,10 +79,15 @@ function Animatronic({
       ranges["Bonnie"] = ranges["Bonnie"] + 1;
       ranges["Chica"] = ranges["Chica"] + 1;
     } else if (hour === 4) {
-      ranges["Bonnie"] = ranges["Bonnie"] + 1;
-      ranges["Chica"] = ranges["Chica"] + 1;
+      ranges["Bonnie"] = ranges["Bonnie"] + 2;
+      ranges["Chica"] = ranges["Chica"] + 2;
       ranges["Freddy"] = ranges["Freddy"] + 1;
       ranges["Foxy"] = ranges["Foxy"] + 1;
+    } else if (hour === 5) {
+      ranges["Bonnie"] = ranges["Bonnie"] + 2;
+      ranges["Chica"] = ranges["Chica"] + 2;
+      ranges["Freddy"] = ranges["Freddy"] + 2;
+      ranges["Foxy"] = ranges["Foxy"] + 2;
     }
   }, [hour]);
 
@@ -153,7 +158,8 @@ function Animatronic({
 
   function willMove (character, iterator, animaTime) {
     const thisInterval = setInterval(() => {
-      let luckyNumber = Math.floor(Math.random() * 40);
+      const max = character === "Bonnie" || character === "Chica" ? 22 : 30;
+      let luckyNumber = Math.floor(Math.random() * max);
 
       let condition = luckyNumber < ranges[character] && !animatronics[character].door;
 

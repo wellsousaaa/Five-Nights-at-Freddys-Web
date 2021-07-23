@@ -42,7 +42,7 @@ const Game = ({
   }, [energy]);
 
   useEffect(() => {
-    let newTime = 9000;
+    let newTime = 6300;
     if (office.leftDoor) newTime -= 1100;
     if (office.rightDoor) newTime -= 1100;
     if (office.leftLight) newTime -= 500;
