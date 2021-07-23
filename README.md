@@ -1,13 +1,16 @@
 ![Five Nights at Freddy's](https://vignette.wikia.nocookie.net/freddy-fazbears-pizza/images/0/0c/Show_stage_nocamera.png/revision/latest?cb=20150119023526)
 
-# Five Nights at Freddys Web
+# ~ Five Nights at Freddy's Web
 
-A web version I've made of the popular horror game [Five Nights at Freddy's](fnafar.com/).
-It was made using [React](https://pt-br.reactjs.org/).
+A web version I've made of the popular horror game [Five Nights at Freddy's](fnafar.com/). 
+⚛️ It was made using popular technologies like [ReactJS](https://pt-br.reactjs.org/) and [Redux](https://redux.js.org/).
 
-## VERSION 2.0
+## VERSION 3.0 ⭐
+- Added custom night!
 
-LINK: [https://five-nights-at-freddys.herokuapp.com/](https://five-nights-at-freddys.herokuapp.com/)
+~ Link: [https://five-nights-at-freddys.herokuapp.com/](https://five-nights-at-freddys.herokuapp.com/)
+
+![Five Nights at Freddy's](https://wendelldesousa.netlify.app/assets/FNAF.webp)
 
 ## Installation
 
