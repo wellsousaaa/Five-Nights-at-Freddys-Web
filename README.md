@@ -5,6 +5,9 @@
 A web version I've made of the popular horror game [Five Nights at Freddy's](fnafar.com/). 
 ⚛️ It was made using popular technologies like [ReactJS](https://pt-br.reactjs.org/) and [Redux](https://redux.js.org/).
 
+Uma versão na Web que eu fiz do famoso jogo de terror [Five Nights at Freddy's](fnafar.com/). 
+⚛️ Foi feito usando tecnologias populares como [ReactJS](https://pt-br.reactjs.org/) e [Redux](https://redux.js.org/).
+
 ## VERSION 3.0 ⭐
 - Added custom night!
 
