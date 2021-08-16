@@ -56,55 +56,61 @@ import EHallCorner_c from "../media/Textures/Cams/EHallCorner-c.webp";
 import EHallCorner_f from "../media/Textures/Cams/EHallCorner-f.webp";
 
 import Kitchen from "../media/Textures/black.jpg";
+import Kitchen_c from "../media/Textures/black.jpg";
+import Kitchen_f from "../media/Textures/black.jpg";
+import Kitchen_c_f from "../media/Textures/black.jpg";
 
 const cameraImages = {
-    Stage,
-    Stage_b_c_f,
-    Stage_b_f,
-    Stage_c_f,
-    Stage_f,
-    DinningArea,
-    DinningArea_b_c_f,
-    DinningArea_c_f,
-    DinningArea_b_f,
-    DinningArea_b_c,
-    DinningArea_b,
-    DinningArea_c,
-    DinningArea_f,
-    Backstage,
-    Backstage_b,
-    SupplyCloset,
-    SupplyCloset_b,
-    WestHall,
-    WestHall_b,
-    WHallCorner,
-    WHallCorner_b,
-    Restrooms,
-    Restrooms_c,
-    Restrooms_c_f,
-    Restrooms_f,
-    EastHall,
-    EastHall_c,
-    EastHall_c_f,
-    EastHall_f,
-    EHallCorner,
-    EHallCorner_c,
-    EHallCorner_f,
-    EHallCorner_c_f: EHallCorner_f,
-    PirateCove,
-    PirateCove_1,
-    PirateCove_2,
-    PirateCove_3,
-    Kitchen,
+  Stage,
+  Stage_b_c_f,
+  Stage_b_f,
+  Stage_c_f,
+  Stage_f,
+  DinningArea,
+  DinningArea_b_c_f,
+  DinningArea_c_f,
+  DinningArea_b_f,
+  DinningArea_b_c,
+  DinningArea_b,
+  DinningArea_c,
+  DinningArea_f,
+  Backstage,
+  Backstage_b,
+  SupplyCloset,
+  SupplyCloset_b,
+  WestHall,
+  WestHall_b,
+  WHallCorner,
+  WHallCorner_b,
+  Restrooms,
+  Restrooms_c,
+  Restrooms_c_f,
+  Restrooms_f,
+  EastHall,
+  EastHall_c,
+  EastHall_c_f,
+  EastHall_f,
+  EHallCorner,
+  EHallCorner_c,
+  EHallCorner_f,
+  EHallCorner_c_f: EHallCorner_f,
+  PirateCove,
+  PirateCove_1,
+  PirateCove_2,
+  PirateCove_3,
+  Kitchen,
+  Kitchen_c,
+  Kitchen_f,
+  Kitchen_c_f,
 };
 
 export default function getCam(animatronics, camera, foxy = "") {
-    let location = camera.trim().replaceAll(" ", "");
+  let location = camera.trim().replaceAll(" ", "");
 
-    if (location === "W.HallCorner") location = "WHallCorner";
-    if (location === "E.HallCorner") location = "EHallCorner";
+  if (location === "W.HallCorner") location = "WHallCorner";
+  if (location === "E.HallCorner") location = "EHallCorner";
 
-    return cameraImages[
-        `${location}${animatronics}${location === "PirateCove" ? foxy : ""}`
-    ];
+  return cameraImages[
+    `${location}${animatronics}${location === "PirateCove" ? foxy : ""}`
+  ];
 }
