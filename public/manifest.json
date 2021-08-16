@@ -7,6 +7,7 @@
   "name": "Five Nights at Freddy's Web",
   "short_name": "FNAF Web",
   "description": "A web version of the popular game Five Nights at Freddy's",
+  "orientation": "landscape",
   "icons": [
       {
           "src": "favicon.ico",
