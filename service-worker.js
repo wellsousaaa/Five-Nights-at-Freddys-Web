@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Five-Nights-at-Freddys-Web/precache-manifest.60cd03e3d897258204977d37db42b4f1.js"
+  "/Five-Nights-at-Freddys-Web/precache-manifest.02e10323ece8b30258eb14c0bac89daf.js"
 );
 
 self.addEventListener('message', (event) => {
