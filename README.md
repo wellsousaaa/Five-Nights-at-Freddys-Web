@@ -13,7 +13,7 @@ Uma versão na Web que eu fiz do famoso jogo de terror [Five Nights at Freddy's]
 
 ~ Link: [https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/](https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/)
 
-![Five Nights at Freddy's](https://wendelldesousa.netlify.app/assets/FNAF.webp)
+![Five Nights at Freddy's](FNAF.webp)
 
 ## Installation
 
