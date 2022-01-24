@@ -11,9 +11,9 @@ Uma versão na Web que eu fiz do famoso jogo de terror [Five Nights at Freddy's]
 ## VERSION 3.0 ⭐
 - Added custom night!
 
-~ Link: [https://five-nights-at-freddys-web.herokuapp.com/](https://five-nights-at-freddys-web.herokuapp.com/)
+~ Link: [https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/](https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/)
 
-![Five Nights at Freddy's](https://wendelldesousa.netlify.app/assets/FNAF.webp)
+![Five Nights at Freddy's](FNAF.webp)
 
 ## Installation
 

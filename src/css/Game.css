@@ -18,7 +18,7 @@ body {
 }
 
 .custom-night {
-  background-image: url("https://wendelldesousa.netlify.app/assets/FNAF.webp");
+  background-image: url("../media/FNAF.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
