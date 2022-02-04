@@ -121,7 +121,8 @@ const CustomNight = ({state, setStart}) => {
             </div>
 
             <footer className={styles.footer}>
-                <p>Made by Wendell de Sousa | 2021 </p>
+                <p>Made by Landon | 2021 </p>
+            <p>By playing this game you agree to the following: I, the user, am completely liable for any trouble I may get in from using this website, and may not blame Landon for anything about it.</p>
                 {/* <p>Five Nights at Freddy's © Scott Cawthon</p> */}
             </footer>
         </div>
