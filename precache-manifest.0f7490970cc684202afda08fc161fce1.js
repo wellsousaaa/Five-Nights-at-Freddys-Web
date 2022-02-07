@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3424c92837a223b3ce2b21daaf170350",
+    "revision": "5fb6f42786c9d30cc705151d9ff1ae13",
     "url": "/Five-Nights-at-Freddys-Web/index.html"
   },
   {
-    "revision": "bcd43da812ff3481be77",
-    "url": "/Five-Nights-at-Freddys-Web/static/css/main.45382ccd.chunk.css"
+    "revision": "9454b380ae278174b046",
+    "url": "/Five-Nights-at-Freddys-Web/static/css/main.f00bcd27.chunk.css"
   },
   {
-    "revision": "8fd04795f2f6125f861c",
-    "url": "/Five-Nights-at-Freddys-Web/static/js/2.82173691.chunk.js"
+    "revision": "85f799dc161c6538fab3",
+    "url": "/Five-Nights-at-Freddys-Web/static/js/2.db2ae89f.chunk.js"
   },
   {
     "revision": "2d0dc3ea56ea29aa89323d664321ba6d",
-    "url": "/Five-Nights-at-Freddys-Web/static/js/2.82173691.chunk.js.LICENSE.txt"
+    "url": "/Five-Nights-at-Freddys-Web/static/js/2.db2ae89f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bcd43da812ff3481be77",
-    "url": "/Five-Nights-at-Freddys-Web/static/js/main.8450dcc2.chunk.js"
+    "revision": "9454b380ae278174b046",
+    "url": "/Five-Nights-at-Freddys-Web/static/js/main.a9c2c3c5.chunk.js"
   },
   {
     "revision": "86d7a2b763ddb7ed593e",
@@ -338,6 +338,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "116d58fe74627af6f6012d5fb10d18ec",
     "url": "/Five-Nights-at-Freddys-Web/static/media/garble2.116d58fe.mp3"
+  },
+  {
+    "revision": "3489a785807320448f7241336d0db02a",
+    "url": "/Five-Nights-at-Freddys-Web/static/media/golden_freddy.3489a785.webp"
+  },
+  {
+    "revision": "41c3a7ac3a449fc96fd6a1eea863526d",
+    "url": "/Five-Nights-at-Freddys-Web/static/media/golden_freddy.41c3a7ac.ogg"
   },
   {
     "revision": "a11ecaf8c3c502b0ff22e0edda054c74",

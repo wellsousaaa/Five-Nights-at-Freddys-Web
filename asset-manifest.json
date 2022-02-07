@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Five-Nights-at-Freddys-Web/static/css/main.45382ccd.chunk.css",
-    "main.js": "/Five-Nights-at-Freddys-Web/static/js/main.8450dcc2.chunk.js",
-    "main.js.map": "/Five-Nights-at-Freddys-Web/static/js/main.8450dcc2.chunk.js.map",
+    "main.css": "/Five-Nights-at-Freddys-Web/static/css/main.f00bcd27.chunk.css",
+    "main.js": "/Five-Nights-at-Freddys-Web/static/js/main.a9c2c3c5.chunk.js",
+    "main.js.map": "/Five-Nights-at-Freddys-Web/static/js/main.a9c2c3c5.chunk.js.map",
     "runtime-main.js": "/Five-Nights-at-Freddys-Web/static/js/runtime-main.1bd90e32.js",
     "runtime-main.js.map": "/Five-Nights-at-Freddys-Web/static/js/runtime-main.1bd90e32.js.map",
-    "static/js/2.82173691.chunk.js": "/Five-Nights-at-Freddys-Web/static/js/2.82173691.chunk.js",
-    "static/js/2.82173691.chunk.js.map": "/Five-Nights-at-Freddys-Web/static/js/2.82173691.chunk.js.map",
+    "static/js/2.db2ae89f.chunk.js": "/Five-Nights-at-Freddys-Web/static/js/2.db2ae89f.chunk.js",
+    "static/js/2.db2ae89f.chunk.js.map": "/Five-Nights-at-Freddys-Web/static/js/2.db2ae89f.chunk.js.map",
     "index.html": "/Five-Nights-at-Freddys-Web/index.html",
-    "precache-manifest.a95454215f62eeaa878a7965d4fac52e.js": "/Five-Nights-at-Freddys-Web/precache-manifest.a95454215f62eeaa878a7965d4fac52e.js",
+    "precache-manifest.0f7490970cc684202afda08fc161fce1.js": "/Five-Nights-at-Freddys-Web/precache-manifest.0f7490970cc684202afda08fc161fce1.js",
     "service-worker.js": "/Five-Nights-at-Freddys-Web/service-worker.js",
-    "static/css/main.45382ccd.chunk.css.map": "/Five-Nights-at-Freddys-Web/static/css/main.45382ccd.chunk.css.map",
-    "static/js/2.82173691.chunk.js.LICENSE.txt": "/Five-Nights-at-Freddys-Web/static/js/2.82173691.chunk.js.LICENSE.txt",
+    "static/css/main.f00bcd27.chunk.css.map": "/Five-Nights-at-Freddys-Web/static/css/main.f00bcd27.chunk.css.map",
+    "static/js/2.db2ae89f.chunk.js.LICENSE.txt": "/Five-Nights-at-Freddys-Web/static/js/2.db2ae89f.chunk.js.LICENSE.txt",
     "static/media/304.webp": "/Five-Nights-at-Freddys-Web/static/media/304.6261b129.webp",
     "static/media/Backstage-b.webp": "/Five-Nights-at-Freddys-Web/static/media/Backstage-b.f9279547.webp",
     "static/media/Backstage.webp": "/Five-Nights-at-Freddys-Web/static/media/Backstage.0cd64672.webp",
@@ -87,6 +87,8 @@
     "static/media/freddy.png": "/Five-Nights-at-Freddys-Web/static/media/freddy.a3eb8395.png",
     "static/media/garble1.mp3": "/Five-Nights-at-Freddys-Web/static/media/garble1.7299925a.mp3",
     "static/media/garble2.mp3": "/Five-Nights-at-Freddys-Web/static/media/garble2.116d58fe.mp3",
+    "static/media/CustomNight.module.css": "/Five-Nights-at-Freddys-Web/static/media/golden_freddy.3489a785.webp",
+    "static/media/golden_freddy.ogg": "/Five-Nights-at-Freddys-Web/static/media/golden_freddy.41c3a7ac.ogg",
     "static/media/jumpscare.mp3": "/Five-Nights-at-Freddys-Web/static/media/jumpscare.a11ecaf8.mp3",
     "static/media/knock2.mp3": "/Five-Nights-at-Freddys-Web/static/media/knock2.5dffb4c9.mp3",
     "static/media/music box.mp3": "/Five-Nights-at-Freddys-Web/static/media/music box.06a9f2bb.mp3",
@@ -96,8 +98,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1bd90e32.js",
-    "static/js/2.82173691.chunk.js",
-    "static/css/main.45382ccd.chunk.css",
-    "static/js/main.8450dcc2.chunk.js"
+    "static/js/2.db2ae89f.chunk.js",
+    "static/css/main.f00bcd27.chunk.css",
+    "static/js/main.a9c2c3c5.chunk.js"
   ]
 }
