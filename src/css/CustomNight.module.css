@@ -1,3 +1,13 @@
+.golden_freddy {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../media/Textures/golden_freddy.webp");
+  background-color: #000;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .custom_night_container {
   overflow: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

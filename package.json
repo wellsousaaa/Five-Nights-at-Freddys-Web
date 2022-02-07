@@ -2,10 +2,13 @@
   "name": "fnaf",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "gh-pages": "^3.2.3",
+    "global": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-image-mapper": "^0.0.15",
@@ -14,6 +17,8 @@
     "redux": "^4.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
