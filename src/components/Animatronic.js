@@ -3,23 +3,23 @@ import Functions from "./Functions";
 import Media from "./Media";
 import { connect } from "react-redux";
 
-let FreddyIterator = Functions.Freddy();
-let BonnieIterator = Functions.Bonnie();
-let ChicaIterator = Functions.Chica();
-let FoxyIterator = Functions.Foxy();
+let MicahJrIterator = Functions.MicahJr();
+let EmmettIterator = Functions.Emmett();
+let ImposterIterator = Functions.Imposter();
+let MWMFreddyIterator = Functions.MWMFreddy();
 
-FreddyIterator.next();
+MicahJrIterator.next();
 
-let FreddyTime = 10000;
-let BonnieTime = 5000;
-let ChicaTime = 7300;
-let FoxyTime = 13000;
+let MicahJrTime = 10000;
+let EmmettTime = 5000;
+let ImposterTime = 7300;
+let MWMFreddyTime = 13000;
 
 const ranges = {
-  Freddy: 1,
-  Bonnie: 1,
-  Chica: 2,
-  Foxy: 1,
+  MicahJr: 1,
+  Emmett: 1,
+  Imposter: 2,
+  MWMFreddy: 1,
 }
 
 let isBlackout = false;
@@ -36,32 +36,32 @@ function Animatronic({
   const { hour, gameOver, blackout } = config;
 
   useEffect(() => {
-    ranges["Freddy"] = stages.Freddy;
-    ranges["Bonnie"] = stages.Bonnie;
-    ranges["Chica"] = stages.Chica;
-    ranges["Foxy"] = stages.Foxy;
+    ranges["MicahJr"] = stages.MicahJr;
+    ranges["Emmett"] = stages.Emmett;
+    ranges["Imposter"] = stages.Imposter;
+    ranges["MWMFreddy"] = stages.MWMFreddy;
 
-    if(stages.Bonnie) willMove("Bonnie", BonnieIterator, BonnieTime);
-    if(stages.Chica) willMove("Chica", ChicaIterator, ChicaTime);
-    if(stages.Foxy) willMove("Foxy", FoxyIterator, FoxyTime, true);
-    if(stages.Freddy && stages.Chica && stages.Bonnie)willMove("Freddy", FreddyIterator, FreddyTime, true);
+    if(stages.Emmett) willMove("Emmett", EmmettIterator, EmmettTime);
+    if(stages.Imposter) willMove("Imposter", ImposterIterator, ImposterTime);
+    if(stages.MWMFreddy) willMove("MWMFreddy", MWMFreddyIterator, MWMFreddyTime, true);
+    if(stages.MicahJr && stages.Imposter && stages.Emmett)willMove("MicahJr", MicahJrIterator, MicahJrTime, true);
 
     return () => {
-      FreddyIterator = Functions.Freddy();
-      BonnieIterator = Functions.Bonnie();
-      ChicaIterator = Functions.Chica();
-      FoxyIterator = Functions.Foxy();
+      MicahJrIterator = Functions.MicahJr();
+      EmmettIterator = Functions.Emmett();
+      ImposterIterator = Functions.Imposter();
+      MWMFreddyIterator = Functions.MWMFreddy();
 
-      FreddyIterator.next();
+      MicahJrIterator.next();
 
-      FreddyTime = 10000;
-      BonnieTime = 5000;
-      ChicaTime = 7300;
-      FoxyTime = 13000;
-      ranges["Freddy"] = stages.Freddy;
-      ranges["Bonnie"] = stages.Bonnie;
-      ranges["Chica"] = stages.Chica;
-      ranges["Foxy"] = stages.Foxy;
+      MicahJrTime = 10000;
+      EmmettTime = 5000;
+      ImposterTime = 7300;
+      MWMFreddyTime = 13000;
+      ranges["MicahJr"] = stages.MicahJr;
+      ranges["Emmett"] = stages.Emmett;
+      ranges["Imposter"] = stages.Imposter;
+      ranges["MWMFreddy"] = stages.MWMFreddy;
 
       isBlackout = false;
       isGameOver = false;
@@ -70,24 +70,24 @@ function Animatronic({
 
   useEffect(() => {
     if (hour === 2) {
-      FreddyTime = 9500;
-      BonnieTime = 4700;
-      ChicaTime = 6800;
-      FoxyTime = 10000;
+      MicahJrTime = 9500;
+      EmmettTime = 4700;
+      ImposterTime = 6800;
+      MWMFreddyTime = 10000;
 
       
-      ranges["Bonnie"] = ranges["Bonnie"] + 1;
-      ranges["Chica"] = ranges["Chica"] + 1;
+      ranges["Emmett"] = ranges["Emmett"] + 1;
+      ranges["Imposter"] = ranges["Imposter"] + 1;
     } else if (hour === 4) {
-      ranges["Bonnie"] = ranges["Bonnie"] + 2;
-      ranges["Chica"] = ranges["Chica"] + 2;
-      ranges["Freddy"] = ranges["Freddy"] + 1;
-      ranges["Foxy"] = ranges["Foxy"] + 1;
+      ranges["Emmett"] = ranges["Emmett"] + 2;
+      ranges["Imposter"] = ranges["Imposter"] + 2;
+      ranges["MicahJr"] = ranges["MicahJr"] + 1;
+      ranges["MWMFreddy"] = ranges["MWMFreddy"] + 1;
     } else if (hour === 5) {
-      ranges["Bonnie"] = ranges["Bonnie"] + 2;
-      ranges["Chica"] = ranges["Chica"] + 2;
-      ranges["Freddy"] = ranges["Freddy"] + 2;
-      ranges["Foxy"] = ranges["Foxy"] + 2;
+      ranges["Emmett"] = ranges["Emmett"] + 2;
+      ranges["Imposter"] = ranges["Imposter"] + 2;
+      ranges["MicahJr"] = ranges["MicahJr"] + 2;
+      ranges["MWMFreddy"] = ranges["MWMFreddy"] + 2;
     }
   }, [hour]);
 
@@ -125,28 +125,28 @@ function Animatronic({
         },
       });
 
-      if (character === "Bonnie") {
-        BonnieIterator = Functions.Bonnie();
-        willMove("Bonnie", BonnieIterator, BonnieTime);
-      } else if (character === "Chica") {
-        ChicaIterator = Functions.Chica();
-        willMove("Chica", ChicaIterator, ChicaTime);
-      } else if (character === "Foxy") {
-        FoxyIterator = Functions.Foxy();
+      if (character === "Emmett") {
+        EmmettIterator = Functions.Emmett();
+        willMove("Emmett", EmmettIterator, EmmettTime);
+      } else if (character === "Imposter") {
+        ImposterIterator = Functions.Imposter();
+        willMove("Imposter", ImposterIterator, ImposterTime);
+      } else if (character === "MWMFreddy") {
+        MWMFreddyIterator = Functions.MWMFreddy();
         Media.Sounds.FoxyPunch.play();
-        willMove("Foxy", FoxyIterator, FoxyTime, true);
-      } else if (character === "Freddy") {
-        FreddyIterator = Functions.Freddy();
-        FreddyIterator.next();
-        willMove("Freddy", FreddyIterator, FreddyTime, true);
+        willMove("MWMFreddy", MWMFreddyIterator, MWMFreddyTime, true);
+      } else if (character === "MicahJr") {
+        MicahJrIterator = Functions.MicahJr();
+        MicahJrIterator.next();
+        willMove("MicahJr", MicahJrIterator, MicahJrTime, true);
       }
     });
   };
 
   const freddyLaugh = () => {
     if (isBlackout) return;
-    let FreddyNumber = Math.floor(Math.random() * 2);
-    if (FreddyNumber == 0) {
+    let MicahJrNumber = Math.floor(Math.random() * 2);
+    if (MicahJrNumber == 0) {
       Media.Sounds.FreddyLaugh1.play();
     } else {
       Media.Sounds.FreddyLaugh2.play();
@@ -180,7 +180,7 @@ function Animatronic({
           });
         });
 
-        if (character === "Freddy") freddyLaugh();
+        if (character === "MicahJr") freddyLaugh();
       }
 
       if (isBlackout || isGameOver) clearInterval(thisInterval);
@@ -194,7 +194,7 @@ function Animatronic({
 
   async function checkDoors(character) {
     const door =
-      character === "Bonnie" || character === "Foxy" ? "leftDoor" : "rightDoor";
+      character === "Emmett" || character === "MWMFreddy" ? "leftDoor" : "rightDoor";
 
     setTimeout(async () => {
       const isDoorOpen = await isThisDoorOpen(door);
